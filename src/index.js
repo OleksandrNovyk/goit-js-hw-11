@@ -10,6 +10,8 @@ refs.form.addEventListener('submit', onFormSubmit);
 refs.loadMoreBtn.addEventListener('click', onLoadMoreBtnClick);
 refs.input.addEventListener('focus', onInputChange);
 
+document.body.style.backgroundColor = "lightblue";
+
 function onInputChange() {
   refs.searchSection.style.backgroundColor = 'hsla(248, 39%, 39%, 1)';
 }
