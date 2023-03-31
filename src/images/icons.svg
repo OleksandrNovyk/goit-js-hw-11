@@ -1,0 +1,17 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+
+
+<symbol id="icon-search" viewBox="0 0 32 32">
+<path  fill="none" style="stroke: $main-black" stroke-linejoin="bevel" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.3333" d="M18.386 22.866c0.041 0.001 0.089 0.001 0.137 0.001 5.155 0 9.334-4.179 9.334-9.334s-4.179-9.334-9.334-9.334c-0.048 0-0.096 0-0.144 0.001l0.007-0c-5.096 0.077-9.197 4.226-9.197 9.333s4.101 9.256 9.19 9.333l0.007 0zM11.626 20.48l-6.252 6.254"></path>
+</symbol>
+
+<symbol id="icon-black-arrow-right" viewBox="0 0 32 32">
+<path  fill="none" stroke="#151515" style="stroke: #151515" stroke-linecap="round" stroke-miterlimit="4" stroke-width="5" d="M14.066 22.374l5.48-5.48c0.239-0.241 0.387-0.573 0.387-0.94s-0.148-0.699-0.388-0.94l-5.332-5.334"></path>
+</symbol>
+<symbol id="icon-green-arrow-right" viewBox="0 0 32 32">
+<path  fill="none" stroke="#92c064" style="stroke: #92c064" stroke-linecap="round" stroke-miterlimit="4" stroke-width="5" d="M14.066 22.374l5.48-5.48c0.239-0.241 0.387-0.573 0.387-0.94s-0.148-0.699-0.388-0.94l-5.332-5.334"></path>
+</symbol>
+
+</defs>
+</svg>
