@@ -74,8 +74,8 @@ function onFormSubmit(event) {
       lightbox.refresh();
     });
   } catch {
-    er => {
-      console.log(er);
+    error => {
+      console.log(error);
     };
   }
   // refs.form.reset();
@@ -106,8 +106,8 @@ function onLoadMoreBtnClick() {
       pageStart = pageStart + 1;
     });
   } catch {
-    er => {
-      console.log(er);
+    error => {
+      console.log(error);
     };
   }
 }
