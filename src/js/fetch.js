@@ -15,6 +15,7 @@ export async function fetchData(searchQuery, pageStart) {
 
   const url = `https://pixabay.com/api/?${searchParams}`;
 
+
   const response = await axios.get(url);
   if (response.status === 404) {
     Notify.failure('Oops, no pics found. Please try again', notifySettings);
@@ -22,3 +23,5 @@ export async function fetchData(searchQuery, pageStart) {
   }
   return response;
 }
+
+

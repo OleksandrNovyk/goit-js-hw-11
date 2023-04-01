@@ -23,13 +23,15 @@ const lightbox = new SimpleLightbox('.gallery a', {
   scrollZoom: false,
 });
 
+
 let searchQuery = null;
 let pageStart = 1;
 
 function onFormSubmit(event) {
   event.preventDefault();
   refs.searchSection.style.backgroundColor = 'hsla(248, 39%, 39%, 0.7)';
-  searchQuery = event.currentTarget.elements.searchQuery.value.trim();
+  searchQuery = event.currentTarget.elements.searchQuery.value.trim().toLowerCase();
+  resetPage();
 
   try {
     fetchData(searchQuery, pageStart).then(result => {
@@ -37,7 +39,7 @@ function onFormSubmit(event) {
       const total = data.totalHits;
       const picsArr = data.hits;
       const picsLeft = total - picsArr.length * pageStart;
-      // console.log(picsLeft);
+      console.log(picsLeft);
 
       if (searchQuery === '') {
         return Notify.warning(
@@ -72,8 +74,8 @@ function onFormSubmit(event) {
       lightbox.refresh();
     });
   } catch {
-    error => {
-      console.log(error);
+    er => {
+      console.log(er);
     };
   }
 
@@ -105,8 +107,15 @@ function onLoadMoreBtnClick() {
       pageStart = pageStart + 1;
     });
   } catch {
-    error => {
-      console.log(error);
+    er => {
+      console.log(er);
     };
   }
+}
+
+
+function resetPage() {
+  refs.gallery.innerHTML = '';
+  pageStart = 1;
+  // refs.loadMoreBtn.style.display = 'none';
 }
