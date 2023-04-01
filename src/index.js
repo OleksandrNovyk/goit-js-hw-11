@@ -78,8 +78,7 @@ function onFormSubmit(event) {
       console.log(er);
     };
   }
-
-  refs.form.reset();
+  // refs.form.reset();
 }
 
 function onLoadMoreBtnClick() {
@@ -113,9 +112,7 @@ function onLoadMoreBtnClick() {
   }
 }
 
-
 function resetPage() {
   refs.gallery.innerHTML = '';
   pageStart = 1;
-  // refs.loadMoreBtn.style.display = 'none';
 }
