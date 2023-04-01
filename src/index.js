@@ -29,7 +29,7 @@ let pageStart = 1;
 function onFormSubmit(event) {
   event.preventDefault();
   refs.searchSection.style.backgroundColor = 'hsla(248, 39%, 39%, 0.7)';
-  searchQuery = event.currentTarget.elements.searchQuery.value;
+  searchQuery = event.currentTarget.elements.searchQuery.value.trim();
 
   try {
     fetchData(searchQuery, pageStart).then(result => {
