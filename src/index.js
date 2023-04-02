@@ -39,7 +39,7 @@ function onFormSubmit(e) {
       const total = data.totalHits;
       const picsArr = data.hits;
       const picsLeft = total - picsArr.length * pageStart;
-      console.log(picsLeft);
+      // console.log(picsLeft);
       // console.log(data);
 
 
