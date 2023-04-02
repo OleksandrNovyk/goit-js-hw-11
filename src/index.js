@@ -117,4 +117,6 @@ function onLoadMoreBtnClick() {
 function resetPage() {
   refs.gallery.innerHTML = '';
   pageStart = 1;
+  refs.loadMoreBtn.classList.add('is-hidden');
+
 }
