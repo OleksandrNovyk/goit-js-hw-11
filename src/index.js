@@ -27,10 +27,10 @@ const lightbox = new SimpleLightbox('.gallery a', {
 let searchQuery = null;
 let pageStart = 1;
 
-function onFormSubmit(event) {
-  event.preventDefault();
+function onFormSubmit(e) {
+  e.preventDefault();
   refs.searchSection.style.backgroundColor = 'hsla(248, 39%, 39%, 0.7)';
-  searchQuery = event.currentTarget.elements.searchQuery.value.trim().toLowerCase();
+  searchQuery = e.currentTarget.elements.searchQuery.value.trim().toLowerCase();
   resetPage();
 
   try {
@@ -40,6 +40,8 @@ function onFormSubmit(event) {
       const picsArr = data.hits;
       const picsLeft = total - picsArr.length * pageStart;
       console.log(picsLeft);
+      // console.log(data);
+
 
       if (searchQuery === '') {
         return Notify.warning(
